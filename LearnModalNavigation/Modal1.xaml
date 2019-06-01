@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="LearnModalNavigation.Modal1"
+             Title="Starting Page">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+            <Label Text="I am a Modal Page" >
+            </Label>
+            <Button Text="Close me (Pop)" Clicked="Handle_Clicked" BorderRadius="10" BorderColor="Blue" BackgroundColor="Silver">
+            </Button>
+            <Button Text="Add Another Modal (Push)" Clicked="Push_Clicked" BorderRadius="10" BorderColor="Blue" BackgroundColor="Silver">
+            </Button>
+            <Label Text="5" x:Name="lblNavigationCount" HorizontalOptions="Center">
+            </Label>
+            <ListView x:Name="pageNames" HorizontalOptions="CenterAndExpand">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Title}"></TextCell>
+                        
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                
+            </ListView>
+            <Label Text="Mac : Press Control(^)+ Space to identing">
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

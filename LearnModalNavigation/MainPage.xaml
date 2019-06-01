@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:LearnModalNavigation" x:Class="LearnModalNavigation.MainPage">
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+       
+        <!-- Place new controls here -->
+        <Label Text="Welcome to Xamarin.Forms!" HorizontalOptions="Center" VerticalOptions="Center" />
+    <Button x:Name="option_1_button" Text="Simple Modal" BackgroundColor="Silver" 
+            Margin="10,10,10,10" MinimumWidthRequest="300"  HorizontalOptions="Center" BorderRadius="10"></Button>
+    
+  <Button x:Name="option_2_button" Text="Modal With Data" BackgroundColor="Silver" 
+            Margin="10,10,10,10" MinimumWidthRequest="500"  HorizontalOptions="Center" BorderRadius="10"></Button>
+    
+    </StackLayout>
+</ContentPage>

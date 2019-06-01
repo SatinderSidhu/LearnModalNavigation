@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LearnModalNavigation.Modal2">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="Name">
+            </Label>
+            <Label Text="{Binding Name}">
+            </Label>
+             <Label Text="Address">
+            </Label>
+            <Label Text="{Binding Address}">
+            </Label>
+             <Label Text="Profession">
+            </Label>
+            <Label Text="{Binding Profession}">
+            </Label>
+              <Button Text="Close me (Pop)" Clicked="Handle_Clicked" BorderRadius="10" BorderColor="Blue" BackgroundColor="Silver">
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
